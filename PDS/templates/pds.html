@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PENGETAHUAN DASAR STATISTIKA</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://1.bp.blogspot.com/-Gg91JHtQt6Q/WbX4D8_21uI/AAAAAAAAACI/_Vn-K1OMmaYKAw6JNgrYKGlX0uKsqOKlQCLcBGAs/s1600/konsep%2Bstatistika.jpg" alt="DASAR STATISTIKA" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Statistik dapat diartikan sebagai kumpulan angka-angka mengenai suatu masalah, sehingga dapat memberikan gambaran mengenai masalah tersebut. Biasanya kumpulan data tersebut sudah disusun dalam sebuah tabel. </p>
+    <p style="font-family: 'times new roman'">Statistika menurut fungsinya dibagi menjadi dua bagian yaitu statistika deskriptif dan statistika inferensial. Statistika yang menyangkut kesimpulan yang valid dinamakan statistika inferensial atau statistika induktif. Dalam statistika inferensial biasanya memasukkan unsur peluang dalam menarik kesimpulannya. Sedangkan statistika yang hanya menggambarkan dan menganalisis kelompok data yang diberikan tanpa penarikan kesimpulan mengenai kelompok data yang lebih besar dinamakan statistika deskriptif atau statistika deduktif.</p>
+    
+    
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

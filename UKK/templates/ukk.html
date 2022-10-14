@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">UKURAN KEMIRINGAN DAN KERUNCINGAN</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://2.bp.blogspot.com/-oZMC1Yt3AG8/XCiGw5xQeHI/AAAAAAAAACM/eUbQPylNfWMhVxBsnQn4udlwYD6HY2HAwCLcBGAs/s1600/10.png" alt="UKURAN KEMIRINGAN DAN KERUNCINGAN" width="500px"></center></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Keruncingan adalah ukuran mengenai tinggi rendahnya atau runcingnya suatu kurva.</p>
+    <p style="font-family: 'times new roman'">Kemiringan merupakan derajat atau ukuran dari ketidaksimetrisan (Asimetri) suatu distribusi data. </p>
+    <p style="font-family: 'times new roman'">Ada tiga jenis derajat keruncingan, yaitu :Leptokurtis, Mesokurtis, NormalPlatikurtis</P>
+    <p style="font-family: 'times new roman'">Ada tiga jenis derajat kemiringan, yaitu :simetris, Miring ke kanan, miring ke kiri</P>
+    
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

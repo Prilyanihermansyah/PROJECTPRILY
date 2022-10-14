@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PENYAJIAN DATA</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://berbagibentuk.blogspot.com/" alt="Penyajian data" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Penyajian data merupakan salah satu kegiatan dalam pembuatan laporan hasil penelitian yang telah dilakukan agar data yang telah dikumpulkan dapat dipahami dan dianalisis sesuai dengan tujuan yang diinginkan. Setelah memperoleh data, biasanya data-data yang diperoleh tersebut dapat disajikan dalam 2 bentuk, yaitu bentuk tabel dan bentuk diagram.</p>
+    <p style="font-family: 'times new roman'">Penyajian data juga dapat diartikan sebagai rangkaian kegiatan dalam proses penyelesaian hasil penelitian dengan mempergunakan metode analisis sesuai dengan tujuan yang diinginkan. Hal ini dilakukan guna mempermudah data-data yang telah dikumpulkan.</p>
+
+    
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

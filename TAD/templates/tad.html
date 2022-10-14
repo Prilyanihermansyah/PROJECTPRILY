@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">TEKNIK ANALISIS DATA</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://idcloudhost.com/cara-melakukan-analisis-data-pengertian-tujuan-teknik-dan-metode-dan-contoh-tool-yang-digunakan/" alt="TEKNIK ANALISIS DATA" width="500px"></center></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Teknik analisis data adalah suatu proses untuk mengolah data dan informasi ke dalam proses penelitian, nantinya data tersebut akan dijadikan sebagai hasil penelitian atau informasi baru. Proses analisis data perlu dilakukan agar tahu kevalidan data yang didapat sehingga nantinya akan memudahkan dalam proses-proses selanjutnya.</p>
+    <p style="font-family: 'times new roman'">Tujuan dari analisis data antara lain adalah untuk: Menguraikan data agar lebih mudah dipahami, Mendapatkan jawaban dari penelitian yang dilakukan untuk nantinya diolah menjadi kesimpulan yang sesuai dengan data yang telah didapat, Memahami bagaimana seseorang memaknai suatu fenomena, Mendapatkan penjelasan mengenai suatu peristiwa tertentu, Mendapatkan alasan mengapa seseorang melakukan tindakan tertentu. </p>
+   
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

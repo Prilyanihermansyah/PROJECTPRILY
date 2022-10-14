@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">KURVA NORMAL DAN KEGUNAANNYA</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="http://2.bp.blogspot.com/-O4F9Z7v0GmY/VG6Vusq9PRI/AAAAAAAABRY/NuGS9RM90og/s1600/Mengenal%2BKurva%2BNormal%2BDalam%2BIlmu%2BStatistik%2B2.jpg" alt="Kurva Normal" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">kurva normal adalah kurva yang berasal dari data-data yang terdistribusi normal. Ciri-ciri data terdistribusi normal terdapat keseimbangan simpangan antara sisi kiri dan sisi kanan, sehingga sigma total dari data keselurhan adalah nol.</p>
+    <p style="font-family: 'times new roman'">Bentuk kurva normal menyerupai bentuk genta (bel). Kurva normal merupakan suatu poligon yang dilicinkan yang mana ordinatnya memuat frekuensi dan absisnya memuat nilai variabel. Bentuk kurva normal adalah simetris, sehingga luas rata-rata (mean) ke kanan dan ke kiri masing-masing mendekati 50 %.  Memiliki satu modus, jadi kurva unimodal. </p>
+    <p style="font-family: 'times new roman'">Ruangan yang dibatasi daerah kurva dengan absisnya disebut daerah kurva normal. Luas daerah kurva normal biasa dinyatakan dalam persen atau proporsi. Dengan kata lain luas daerah kurva normal adalah seratus per sen, apabila dinyatakan dalam persen, dan apabila dinyatakan dengan proporsi, luas daerah kurva normal adalah satu. </p>
+    
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

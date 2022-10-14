@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">UKURAN PEMUSATAN</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://penelitianilmiah.com/wp-content/uploads/2020/11/Ukuran-Pemusatan-Data.jpg" alt="UKURAN PEMUSATAN" width="500px"></center></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Ukuran pemusatan data adalah statistik ringkasan yang mewakili titik pusat atau nilai tipikal dari berbagai kumpulan data. Pengukuran ini menunjukkan di mana sebagian besar nilai dalam distribusi berada dan juga disebut sebagai lokasi pusat distribusi.</p>
+    <p style="font-family: 'times new roman'">tiga ukuran tendensi sentral yang paling umum adalah:Mean, Median, Modus</p>
+    <p style="font-family: 'times new roman'">Definisi ukuran pemusatan menurut para ahli yaitu, Ronald E. Walpole (1993), Ukuran pemusatan data adalah sembarang ukuran yang menunjukkan pusat segugus data yang telah diurutkan dari yang terkecil sampai yang terbesar atau sebaliknya dari data terbesar sampai data terkecil.</P>
+    
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

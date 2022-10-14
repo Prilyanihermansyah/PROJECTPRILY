@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PENGUJIAN HIPOTESIS</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://i1.wp.com/yuvalianda.com/wp-content/uploads/2019/05/grafik-uji-hipotesis-dua-arah.jpg?ssl=1" alt="UJI HIPOTESIS" width="500px"></center></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Uji hipotesis merupakan metode pembuktian empiris untuk mengkonfirmasi atau menolak sebuah opini ataupun asumsi dengan menggunakan data sampel.</p>
+    <p style="font-family: 'times new roman'">Uji hipotesis dilakukan dengan data sampel. Tapi tentu saja tidak semua sampel yang kita ambil berhasil menggambarkan kondisi populasi. Pada dasarnya, besarnya jumlah sampel tetap saja berpeluang untuk menghasilkan kesimpulan yang salah. Uji hipotesis memungkinkan kita untuk melakukan uji eksperimen apakah sampel yang kita gunakan sudah cukup untuk menggambarkan keseluruhan populasi.</p>
+    <p style="font-family: 'times new roman'">Dalam berbagai pengujian, tentunya seorang peneliti ingin membuktikan asumsi atau pendapat yang ia percaya. Uji hipotesis membantu kita dalam membuktikan berbagai hal yang terjadi apakah benar-benar fakta atau hanya sekadar teori belaka.</P>
+    
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}
